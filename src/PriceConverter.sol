@@ -8,8 +8,7 @@ import {AggregatorV3Interface} from "lib/chainlink-brownie-contracts/contracts/s
 library PriceConverter {
     // We could make this public, but then we'd have to deploy it
     function getPrice() internal view returns (uint256) {
-        // Sepolia ETH / USD Address
-        // https://docs.chain.link/data-feeds/price-feeds/addresses
+       
         AggregatorV3Interface priceFeed = AggregatorV3Interface(
             0x694AA1769357215DE4FAC081bf1f309aDC325306
         );
